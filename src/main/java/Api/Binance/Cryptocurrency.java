@@ -1,4 +1,4 @@
-package Binance;
+package Api.Binance;
 
 
 import com.google.gson.annotations.SerializedName;
@@ -6,12 +6,8 @@ import com.google.gson.annotations.SerializedName;
 public class Cryptocurrency {
   @SerializedName("symbol")
   private String symbol;
-
-
   @SerializedName("price")
   private String price;
-
-
   public String getSymbol() {
     return symbol;
   }
@@ -28,5 +24,6 @@ public class Cryptocurrency {
   public void setPrice(String price) {
     this.price = price;
   }
+
 
 }

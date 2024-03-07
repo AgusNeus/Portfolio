@@ -1,4 +1,4 @@
-package Binance;
+package Api.Binance;
 
 
 import java.io.IOException;
@@ -39,12 +39,9 @@ public class BinanceApi {
 
     if (response.isSuccessful()) {
       List<Cryptocurrency> cryptocurrencies = response.body();
-      for (Cryptocurrency cryptocurrency : cryptocurrencies) {
-        criptomonedas.add(cryptocurrency);
-      }
+        criptomonedas.addAll(cryptocurrencies);
     }
     return criptomonedas;
   }
-
 }
 
