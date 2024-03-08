@@ -1,7 +1,7 @@
 package testBinance;
 
-import Api.Binance.Cryptocurrency;
-import Api.Binance.BinanceApi;
+import Api.Cripto.Binance.Entidades.Cryptocurrency;
+import Api.Cripto.Binance.Servicio.BinanceApi;
 import java.io.IOException;
 import java.util.List;
 

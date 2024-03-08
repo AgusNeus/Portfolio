@@ -1,7 +1,7 @@
 package testBinance;
 
-import Api.Binance.Cryptocurrency;
-import Api.Binance.BinanceApi;
+import Api.Cripto.Binance.Entidades.Cryptocurrency;
+import Api.Cripto.Binance.Servicio.BinanceApi;
 import java.io.IOException;
 import java.util.List;
 
@@ -13,9 +13,7 @@ public class PruebaGenerica {
 
         for (Cryptocurrency cryptocurrency : monedasConPrecio) {
             System.out.println("Symbol: " + cryptocurrency.getSymbol() +", Price: " + cryptocurrency.getPrice());
-             // Para salir del bucle interno una vez que se ha encontrado la moneda con precio
           }
-
 
     } catch (IOException e) {
       System.out.println("Error al obtener los datos de la API de Binance: " + e.getMessage());
